@@ -1,0 +1,50 @@
+#!/bin/bash
+nama= "jul"
+umur=20
+echo "$nama, $umur
+read nama
+x=10
+y=5
+hasil=$((x+y)) 
+echo "$hasil"
+angka=10
+if [$angka -ge 12]:then
+echo"angka lebih besar dari 12"
+elif [$angka -ge 7]
+echo"angka lebih besar dari 7"
+else 
+echo"sama dengan"
+fi 
+for nilai in {1..5}
+do
+echo "$nilai"
+done
+angka1=1
+while [$angka1 -le 5]
+do 
+echo"$angka1"
+done 
+
+nano ~/log_time.sh
+chmod +x ~/log_time.sh
+crontab -e ( * * * * * ~/log_time.sh) 
+crontab -l
+cat ~/log_time.txt
+sudo systemctl status cron
+
+sudo nano /plt/systemd/system/log_time.service
+sudo nano /etc/systemd/system/log_time.timer
+sudo systemctl enable --now log_time.timer
+systemctl list-timera --all
+
+journalctl --no pager
+Journalctl –since “30 minutes ago"
+journalctl -u cron –No.-pager –since “10 minutes ago”
+journalctl -b -1
+journalctl -f
+dmesg | tail -10
+journalctl -k
+
+
+
+
