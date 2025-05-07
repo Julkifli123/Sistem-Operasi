@@ -1,0 +1,19 @@
+free -h
+htop
+cat /proc/meminfo
+cat /proc/cpuinfo
+lscpu
+swappon --summary
+vmstat -s
+ps aux --sort=%mem |head
+mkdir nama folder
+ls 
+cd nama file
+nano
+python3
+chmod +x
+./nama_file.sh
+sudo reboot
+sudo shutdown now
+sudo shutdown -r
+sudo shutdown -h
